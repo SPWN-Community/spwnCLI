@@ -15,6 +15,10 @@ namespace spwnCLI
     {
         public static void Main(string[] args)
         {
+            start();
+        }
+        public static void start()
+        {
             recli:
             Console.WriteLine("Start!");
             Thread.Sleep(5000);
@@ -34,7 +38,7 @@ namespace spwnCLI
             Console.WriteLine(answer, Color.Red);
             if (answer == "restart")
             {
-                Program.Main(main,);
+                Program.start();
             }
             Thread.Sleep(5000);
         }
