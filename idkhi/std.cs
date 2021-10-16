@@ -29,7 +29,7 @@ namespace spwnCLI
         
         public static void Build(string fileName)
         {
-            Process.Start("spwn", " -build " + fileName);
+            Process.Start("spwn", " b " + fileName);
         }
     }
 

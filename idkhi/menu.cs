@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Colorful;
 using Console = Colorful.Console;
+using Figgle;
 
 namespace spwnCLI
 {
@@ -25,21 +26,26 @@ namespace spwnCLI
         public static void LangMenu()
         {
             Console.Clear();
+            Console.WriteLine(FiggleFonts.Ogre.Render("spwnCLI"));
+
             Langs("1", "Russian");
-            Langs("1", "English");
+            Langs("2", "English");
             string option = Console.ReadLine();
             if (option == "1")
             {
                 stdLinguist.UserLang = "russian";
+                CLI.cli();
             }
-            else if (option == "2")
+            if (option == "2")
             {
                 stdLinguist.UserLang = "english";
+                CLI.cli();
             }
             else
             {
                 Console.Write("ERROR! ", Color.Red);
                 Console.WriteLine("Choose a valid variant!");
+                Console.Clear();
                 LangMenu();
             }
         }

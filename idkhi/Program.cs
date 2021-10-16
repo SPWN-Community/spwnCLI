@@ -13,11 +13,13 @@ namespace spwnCLI
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            recli:
             Console.WriteLine("Start!");
             Thread.Sleep(5000);
             LangMenu.LangSelect();
+            Console.Clear();
         }
     }
 
@@ -28,6 +30,13 @@ namespace spwnCLI
             Console.Title = "spwnCLI";
             Console.Write("> ", Color.LightGray);
             string answer = Console.ReadLine();
+            Console.Write("Your answer was: ");
+            Console.WriteLine(answer, Color.Red);
+            if (answer == "restart")
+            {
+                Program.Main(main,);
+            }
+            Thread.Sleep(5000);
         }
     }
 }
