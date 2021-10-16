@@ -25,8 +25,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Anouncements
-The anouncements will be in spwn-tools Discord Server and in special issue.
+## Announcements
+The announcements will be in spwn-tools Discord Server and in special issue.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/) -
